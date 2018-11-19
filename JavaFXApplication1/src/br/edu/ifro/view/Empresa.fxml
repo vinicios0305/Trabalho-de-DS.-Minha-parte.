@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" layoutX="-1.0" prefHeight="642.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.EmpresasController">
+   <children>
+      <Label layoutX="204.0" layoutY="30.0" text="CNPJ:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="30.0" text="NIRE:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="154.0" text="E-mail:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="30.0" text="Inscrição Estadual:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="303.0" text="Logradouro:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="72.0" text="Razão Social:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="113.0" text="Nome Fantasia:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="194.0" text="Telefone(01):">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="193.0" text="Telefone(02):">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="317.0" layoutY="238.0" prefHeight="3.0" prefWidth="638.0" />
+      <Label layoutX="756.0" layoutY="303.0" text="Número:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="264.0" text="Cidade:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="756.0" layoutY="263.0" text="UF:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="303.0" text="Bairro:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="256.0" text="CEP:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="230.0" prefHeight="16.0" prefWidth="65.0" text="Endereço">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Label>
+      <Separator layoutX="173.0" layoutY="237.0" prefHeight="3.0" prefWidth="81.0" />
+      <Separator layoutX="380.0" layoutY="345.0" prefHeight="14.0" prefWidth="575.0" />
+      <Label layoutX="266.0" layoutY="345.0" text="Responsável Jurídico">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Label>
+      <Separator layoutX="184.0" layoutY="347.0" prefHeight="14.0" prefWidth="71.0" />
+      <Label layoutX="204.0" layoutY="366.0" text="Nome:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="665.0" layoutY="367.0" text="CPF:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="443.0" text="CEP:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="736.0" layoutY="484.0" text="Número:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="476.0" text="Logradouro:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="170.0" layoutY="507.0" prefHeight="40.0" prefWidth="784.0" />
+      <Label layoutX="510.0" layoutY="442.0" text="Cidade:" />
+      <Label layoutX="738.0" layoutY="443.0" text="UF:" />
+      <Label layoutX="513.0" layoutY="479.0" text="Bairro:" />
+      <Label layoutX="205.0" layoutY="402.0" text="Telefone:" />
+      <JFXTextField fx:id="txtCnpj" focusColor="RED" layoutX="241.0" layoutY="25.0" prefHeight="26.0" prefWidth="172.0" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtNire" focusColor="RED" layoutX="466.0" layoutY="25.0" />
+      <JFXTextField fx:id="txtInscricaoEstadual" focusColor="RED" layoutX="742.0" layoutY="25.0" prefHeight="26.0" prefWidth="129.0" />
+      <JFXTextField fx:id="txtRazaoSocial" focusColor="RED" layoutX="288.0" layoutY="67.0" prefHeight="26.0" prefWidth="582.0" />
+      <JFXTextField fx:id="txtNomeFantasia" focusColor="RED" layoutX="298.0" layoutY="108.0" prefHeight="26.0" prefWidth="582.0" />
+      <JFXTextField fx:id="txtEmail" focusColor="RED" layoutX="247.0" layoutY="149.0" prefHeight="26.0" prefWidth="631.0" />
+      <JFXTextField fx:id="txtFone1" focusColor="RED" layoutX="280.0" layoutY="187.0" />
+      <JFXTextField fx:id="txtcep1" focusColor="RED" layoutX="241.0" layoutY="251.0" prefHeight="26.0" prefWidth="152.0" />
+      <JFXTextField fx:id="txtLogradouro" focusColor="RED" layoutX="269.0" layoutY="298.0" prefHeight="26.0" prefWidth="233.0" />
+      <JFXTextField fx:id="txtNumero" focusColor="RED" layoutX="810.0" layoutY="298.0" prefHeight="26.0" prefWidth="120.0" />
+      <JFXTextField fx:id="txtcidade1" focusColor="RED" layoutX="560.0" layoutY="259.0" prefHeight="26.0" prefWidth="186.0" />
+      <JFXTextField fx:id="txtbairro1" focusColor="RED" layoutX="554.0" layoutY="298.0" prefHeight="26.0" prefWidth="194.0" />
+      <JFXTextField fx:id="txtuf1" focusColor="RED" layoutX="780.0" layoutY="259.0" prefHeight="26.0" prefWidth="152.0" />
+      <JFXTextField fx:id="txtNome" focusColor="RED" layoutX="246.0" layoutY="362.0" prefHeight="26.0" prefWidth="403.0" />
+      <JFXTextField fx:id="txtCpf" focusColor="RED" layoutX="700.0" layoutY="362.0" prefHeight="26.0" prefWidth="233.0" />
+      <JFXTextField fx:id="txtNumeroResponsavel" focusColor="RED" layoutX="265.0" layoutY="398.0" prefHeight="26.0" prefWidth="215.0" />
+      <JFXTextField fx:id="txtcep" focusColor="RED" layoutX="246.0" layoutY="438.0" prefHeight="26.0" prefWidth="142.0" />
+      <JFXTextField fx:id="txtlogradouro" focusColor="RED" layoutX="280.0" layoutY="471.0" prefHeight="26.0" prefWidth="215.0" />
+      <JFXTextField fx:id="txtnumero" focusColor="RED" layoutX="796.0" layoutY="475.0" prefHeight="26.0" prefWidth="142.0" />
+      <JFXTextField fx:id="txtBairro" focusColor="RED" layoutX="557.0" layoutY="475.0" prefHeight="26.0" prefWidth="161.0" />
+      <JFXTextField fx:id="txtcidade" focusColor="RED" layoutX="563.0" layoutY="438.0" />
+      <JFXTextField fx:id="txtuf" focusColor="RED" layoutX="761.0" layoutY="438.0" prefHeight="26.0" prefWidth="172.0" />
+      <JFXTextField fx:id="txtFone2" focusColor="RED" layoutX="534.0" layoutY="187.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ae1313" height="642.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+      <ImageView fitHeight="123.0" fitWidth="604.0" layoutX="-209.0" layoutY="258.0" opacity="0.66" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../../../../img/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnvoltar" layoutX="243.0" layoutY="567.0" mnemonicParsing="false" onAction="#voltar" prefHeight="51.0" prefWidth="194.0" style="-fx-background-color: #FA5858;" text="Voltar" textFill="WHITE" />
+      <Button fx:id="btnSalvar" layoutX="477.0" layoutY="567.0" mnemonicParsing="false" onAction="#salvar" prefHeight="51.0" prefWidth="194.0" style="-fx-background-color: #FA5858;" text="Salvar" textFill="WHITE" />
+      <Button fx:id="btncadastro" layoutX="706.0" layoutY="567.0" mnemonicParsing="false" onAction="#cadastro" prefHeight="51.0" prefWidth="194.0" style="-fx-background-color: #FA5858;" text="Cadastros" textFill="WHITE" />
+      <Button fx:id="btnbuscar1" layoutX="394.0" layoutY="258.0" mnemonicParsing="false" onAction="#buscar1" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #FA5858;" text="Buscar" textFill="WHITE" />
+      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="404.0" layoutY="279.0" size="15" wrappingWidth="17.928571701049805" />
+      <Button fx:id="btnBuscar" layoutX="388.0" layoutY="445.0" mnemonicParsing="false" onAction="#buscarCep" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #FA5858;" text="Buscar" textFill="WHITE" />
+      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="397.0" layoutY="467.0" size="15" wrappingWidth="17.928571701049805" />
+      <Separator layoutX="320.0" layoutY="5.0" prefHeight="14.0" prefWidth="645.0" />
+      <Label layoutX="266.0" layoutY="5.0" text="Empresa">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Label>
+      <Separator layoutX="177.0" layoutY="7.0" prefHeight="14.0" prefWidth="81.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_LEFT" layoutX="277.0" layoutY="601.0" size="26" />
+      <FontAwesomeIconView fill="WHITE" glyphName="SAVE" layoutX="509.0" layoutY="601.0" size="26" />
+      <FontAwesomeIconView fill="#f5f5f5" glyphName="TABLE" layoutX="730.0" layoutY="601.0" size="26" />
+   </children>
+</AnchorPane>

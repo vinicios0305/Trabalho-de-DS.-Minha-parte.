@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="773.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.ListagemUsuariosCadastradosController">
+   <children>
+      <TableView fx:id="tbusuarios" layoutX="23.0" layoutY="34.0" prefHeight="292.0" prefWidth="741.0">
+        <columns>
+          <TableColumn prefWidth="237.0" text="NOME">
+              <cellValueFactory>
+                  <PropertyValueFactory property="nome" /> 
+              </cellValueFactory>
+          </TableColumn>
+              
+          <TableColumn prefWidth="324.0" text="EMAIL">
+              <cellValueFactory>
+                  <PropertyValueFactory property="email" /> 
+              </cellValueFactory>
+          </TableColumn>
+              
+              
+            <TableColumn prefWidth="179.0" text="SENHA">
+                <cellValueFactory>
+                  <PropertyValueFactory property="senha" /> 
+              </cellValueFactory>
+          </TableColumn>
+                
+        </columns>
+      </TableView>
+      <Button fx:id="btnvoltar" layoutX="40.0" layoutY="341.0" mnemonicParsing="false" onAction="#voltar" prefHeight="31.0" prefWidth="213.0" text="Voltar" />
+      <Button fx:id="btnexcluir" layoutX="280.0" layoutY="341.0" mnemonicParsing="false" onAction="#excluir" prefHeight="31.0" prefWidth="213.0" text="Excluir" />
+      <Button fx:id="btneditar" layoutX="516.0" layoutY="341.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="213.0" text="Editar" />
+   </children>
+</AnchorPane>

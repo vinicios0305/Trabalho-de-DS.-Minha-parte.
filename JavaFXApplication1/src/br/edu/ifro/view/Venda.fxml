@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CadastrarVendaController">
+   <children>
+      <ImageView fitHeight="513.0" fitWidth="737.0" layoutX="1.0" opacity="0.21">
+         <image>
+            <Image url="@../../../../../../../../Downloads/image_6483441%20(1).JPG" />
+         </image>
+      </ImageView>
+      <TreeTableView blendMode="DIFFERENCE" layoutY="121.0" prefHeight="134.0" prefWidth="738.0">
+        <columns>
+          <TreeTableColumn prefWidth="343.0" text="Descrição do Produto" />
+            <TreeTableColumn prefWidth="134.0" text="Quantidade" />
+            <TreeTableColumn prefWidth="118.0" text="Preço Unitário" />
+            <TreeTableColumn prefWidth="142.0" text="Total do Produto" />
+        </columns>
+      </TreeTableView>
+      <TextField fx:id="txtDataPedido" layoutX="316.0" layoutY="49.0" prefHeight="25.0" prefWidth="106.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <Label layoutX="29.0" layoutY="28.0" text="Número do Pedido:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="54.0" layoutX="200.0" layoutY="22.0" stroke="#221b1bb5" strokeType="INSIDE" width="42.0" />
+      <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="206.0" layoutY="28.0" opacity="0.57">
+         <image>
+            <Image url="@presentar-simbolo-interfaz-de-una-pagina-en-blanco-con-una-esquina-doblada_318-41811.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="210.0" layoutY="62.0" text="Novo">
+         <font>
+            <Font name="Arial" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="28.0" text="Data do Pedido:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="28.0" text="Hora do Pedido:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumeroPedido" layoutX="29.0" layoutY="49.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtHoraPedido" layoutX="511.0" layoutY="49.0" prefHeight="25.0" prefWidth="106.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <Label layoutX="32.0" layoutY="99.0" text="Dados do Pedido:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="278.0" text="Observações do Pedido:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtObsPedido" layoutX="29.0" layoutY="299.0" prefHeight="71.0" prefWidth="680.0" />
+      <Label layoutX="29.0" layoutY="383.0" text="Forma de Pagamento:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="383.0" text="Total Pedido:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="383.0" text="Desconto:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="383.0" text="Total Líquido:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="29.0" layoutY="407.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" text="MenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="txtTotalPedido" layoutX="210.0" layoutY="407.0" prefHeight="25.0" prefWidth="164.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDesconto" layoutX="391.0" layoutY="407.0" prefHeight="25.0" prefWidth="136.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTotalLiquido" layoutX="545.0" layoutY="407.0" prefHeight="25.0" prefWidth="164.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnLimpar" layoutX="278.0" layoutY="451.0" mnemonicParsing="false" onAction="#limpar" prefHeight="33.0" prefWidth="77.0" text="Limpar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVoltar" layoutX="162.0" layoutY="451.0" mnemonicParsing="false" onAction="#voltar" prefHeight="33.0" prefWidth="77.0" text="Voltar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="392.0" layoutY="451.0" mnemonicParsing="false" onAction="#editar" prefHeight="33.0" prefWidth="77.0" text="Editar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSalvar" layoutX="507.0" layoutY="451.0" mnemonicParsing="false" onAction="#salvar" prefHeight="33.0" prefWidth="77.0" text="Salvar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

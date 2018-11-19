@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="1213.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.ListagemEmpresaController">
+  <children>
+    <Button fx:id="btneditar" layoutX="784.0" layoutY="496.0" mnemonicParsing="false" onAction="#editar" prefHeight="46.0" prefWidth="184.0" style="-fx-background-color: #FA5858;" text="Editar" textFill="WHITE" />
+    <Button fx:id="btnexcluir" layoutX="549.0" layoutY="496.0" mnemonicParsing="false" onAction="#excluir" prefHeight="46.0" prefWidth="194.0" style="-fx-background-color: #FA5858;" text="Excluir" textFill="WHITE" />
+    <Button fx:id="btnvoltar" layoutX="34.0" layoutY="496.0" mnemonicParsing="false" onAction="#voltar" prefHeight="46.0" prefWidth="212.0" style="-fx-background-color: #FA5858;" text="Voltar" textFill="WHITE" />
+    <Button fx:id="btnvisualizar" layoutX="290.0" layoutY="496.0" mnemonicParsing="false" onAction="#visualizar" prefHeight="46.0" prefWidth="222.0" style="-fx-background-color: #FA5858;" text="Visualizar" textFill="WHITE" />
+    <Button fx:id="btnbuscar" layoutX="361.0" layoutY="42.0" mnemonicParsing="false" onAction="#buscar" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #FA5858;" text="Buscar" textFill="WHITE" />
+      <Button fx:id="btnimprimir" layoutX="999.0" layoutY="494.0" mnemonicParsing="false" onAction="#imprimir" prefHeight="46.0" prefWidth="184.0" style="-fx-background-color: #FA5858;" text="Imprimir" textFill="WHITE" />
+      <JFXTextField fx:id="txtbuscar" focusColor="RED" layoutX="24.0" layoutY="42.0" prefHeight="31.0" prefWidth="323.0" promptText="Digite o nome fantasia...." />
+      <TableView fx:id="tbempresa" layoutX="22.0" layoutY="97.0" prefHeight="359.0" prefWidth="1169.0">
+        <columns>
+        <TableColumn prefWidth="36.0" text="ID">
+          <cellValueFactory>
+            <PropertyValueFactory property="id" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="139.0" text="CNPJ">
+          <cellValueFactory>
+            <PropertyValueFactory property="cnpj" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn minWidth="5.0" prefWidth="111.0" text="NIRE">
+          <cellValueFactory>
+            <PropertyValueFactory property="nire" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="129.0" text="INSCRIÇÃO E.">
+          <cellValueFactory>
+            <PropertyValueFactory property="inscricaoEstadual" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="186.0" text="RAZÃO SOCIAL">
+          <cellValueFactory>
+            <PropertyValueFactory property="RazaoSocial" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="135.0" text="NOME FANTASIA">
+          <cellValueFactory>
+            <PropertyValueFactory property="NomeFantasia" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="99.20001220703125" text="TELEFONE 1">
+          <cellValueFactory>
+            <PropertyValueFactory property="fone1" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="110.39996337890625" text="TELEFONE 2">
+          <cellValueFactory>
+            <PropertyValueFactory property="Fone2" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="221.0" text="RESPONSAVEL">
+          <cellValueFactory>
+            <PropertyValueFactory property="Nome" />
+          </cellValueFactory>
+        </TableColumn>
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="372.0" layoutY="63.0" size="15" />
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_LEFT" layoutX="90.0" layoutY="529.0" size="26" text="" />
+      <FontAwesomeIconView fill="WHITE" glyphName="TRASH_ALT" layoutX="596.0" layoutY="528.0" size="26" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PRINT" layoutX="1032.0" layoutY="526.0" size="26" />
+      <FontAwesomeIconView fill="WHITE" glyphName="EYE" layoutX="334.0" layoutY="528.0" size="26" />
+      <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="823.0" layoutY="528.0" size="26" />
+  </children>
+</AnchorPane>

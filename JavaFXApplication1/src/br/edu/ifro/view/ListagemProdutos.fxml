@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.view.ListagemProdutosController">
+   <children>
+      <Button fx:id="btnvisualizar" layoutX="255.0" layoutY="412.0" mnemonicParsing="false" onAction="#visualizar" prefHeight="25.0" prefWidth="222.0" text="Visualizar" />
+      <Button fx:id="btnvoltar" layoutX="21.0" layoutY="412.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="216.0" text="Voltar" />
+      <Button fx:id="btnexcluir" layoutX="490.0" layoutY="412.0" mnemonicParsing="false" onAction="#excluir" prefHeight="25.0" prefWidth="194.0" text="Excluir" />
+      <Button fx:id="btneditar" layoutX="703.0" layoutY="412.0" mnemonicParsing="false" onAction="#editar" prefHeight="25.0" prefWidth="184.0" text="Editar" />
+      <TableView fx:id="tbprodutos" layoutX="29.0" layoutY="59.0" prefHeight="280.0" prefWidth="829.0">
+         <columns>
+            <TableColumn prefWidth="36.0" text="ID">
+               <cellValueFactory>
+                  <PropertyValueFactory property="id" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="DATA">
+               <cellValueFactory>
+                  <PropertyValueFactory property="cnpj" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="5.0" prefWidth="138.0" text="NOME DO PRODUTO">
+               <cellValueFactory>
+                  <PropertyValueFactory property="nire" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="175.0" text="DESCRIÇÃO DO PRODUTO">
+               <cellValueFactory>
+                  <PropertyValueFactory property="inscricaoEstadual" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="143.0" text="PREÇO DE COMPRA">
+               <cellValueFactory>
+                  <PropertyValueFactory property="RazaoSocial" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="120.0" text="PREÇO DE VENDA">
+               <cellValueFactory>
+                  <PropertyValueFactory property="NomeFantasia" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="136.0" text="FORNECEDOR">
+               <cellValueFactory>
+                  <PropertyValueFactory property="Nome" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CadastrarProdutoController">
+   <children>
+      <ImageView fitHeight="386.0" fitWidth="653.0" opacity="0.21">
+         <image>
+            <Image url="@papel%20de%20parede.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="51.0" text="Código:" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="239.0" layoutY="51.0" prefHeight="16.0" prefWidth="106.0" text="Data do Cadastro:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="100.0" text="Nome do Produto:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="235.0" text="Fornecedor:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="190.0" text="Preço de Compra:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="120.0" />
+      <TextField fx:id="txtcodigo" layoutX="108.0" layoutY="46.0" prefHeight="26.0" prefWidth="110.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtprecovenda" layoutX="394.0" layoutY="186.0" prefHeight="26.0" prefWidth="89.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtnomedoproduto" layoutX="174.0" layoutY="95.0" prefHeight="26.0" prefWidth="311.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtfornecedor" layoutX="175.0" layoutY="232.0" prefHeight="26.0" prefWidth="311.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <Label layoutX="292.0" layoutY="190.0" text="Preço de Venda:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <TextField fx:id="txtprecocompra" layoutX="175.0" layoutY="187.0" prefHeight="26.0" prefWidth="97.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <ImageView fitHeight="135.0" fitWidth="158.0" layoutX="513.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="f" />
+         </image></ImageView>
+      <Button fx:id="btnBuscarfoto" layoutX="523.0" layoutY="193.0" mnemonicParsing="false" onAction="#buscar" text="Buscar Foto">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnAdicionar" layoutX="512.0" layoutY="296.0" mnemonicParsing="false" onAction="#adicionar" prefHeight="38.0" prefWidth="97.0" text="Cadastrar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btncadastrar" layoutX="34.0" layoutY="298.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="38.0" prefWidth="97.0" text="Voltar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVoltar" layoutX="394.0" layoutY="297.0" mnemonicParsing="false" onAction="#voltar" prefHeight="38.0" prefWidth="97.0" text="Adicionar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLimpar" layoutX="272.0" layoutY="297.0" mnemonicParsing="false" onAction="#limpar" prefHeight="38.0" prefWidth="97.0" text="Limpar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="txtdata" layoutX="357.0" layoutY="47.0" prefHeight="25.0" prefWidth="126.0" />
+      <Label layoutX="40.0" layoutY="146.0" text="Descrição do Produto">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtdescricaodoproduto" layoutX="174.0" layoutY="143.0" prefHeight="26.0" prefWidth="311.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnsalvar" layoutX="157.0" layoutY="298.0" mnemonicParsing="false" onAction="#limpar" prefHeight="38.0" prefWidth="89.0" text="Salvar">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

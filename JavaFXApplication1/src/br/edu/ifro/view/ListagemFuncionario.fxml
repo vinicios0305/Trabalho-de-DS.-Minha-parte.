@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.ListagemFuncionarioController">
+   <children>
+      <TableView fx:id="tbempresa" blendMode="DARKEN" layoutX="14.0" layoutY="29.0" prefHeight="395.0" prefWidth="1000.0">
+         <columns>
+            <TableColumn prefWidth="36.0" text="ID">
+               <cellValueFactory>
+                  <PropertyValueFactory property="id" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="139.0" text="NOME">
+               <cellValueFactory>
+                  <PropertyValueFactory property="cnpj" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="5.0" prefWidth="64.0" text="CPF">
+               <cellValueFactory>
+                  <PropertyValueFactory property="nire" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="RG">
+               <cellValueFactory>
+                  <PropertyValueFactory property="inscricaoEstadual" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="108.0" text="RUA">
+               <cellValueFactory>
+                  <PropertyValueFactory property="RazaoSocial" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="86.0" text="BAIRRO">
+               <cellValueFactory>
+                  <PropertyValueFactory property="NomeFantasia" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="104.0" text="Nº">
+               <cellValueFactory>
+                  <PropertyValueFactory property="fone1" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="104.0" text="CEP">
+               <cellValueFactory>
+                  <PropertyValueFactory property="Fone2" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="123.0" text="CELULAR">
+               <cellValueFactory>
+                  <PropertyValueFactory property="Nome" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="EMAIL" />
+            <TableColumn prefWidth="75.0" text="CARGO" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnvoltar" layoutX="239.0" layoutY="443.0" mnemonicParsing="false" onAction="#voltar" prefHeight="35.0" prefWidth="80.0" text="VOLTAR">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnvisualizar" layoutX="357.0" layoutY="443.0" mnemonicParsing="false" onAction="#visualizar" prefHeight="35.0" prefWidth="102.0" text="VISUALIZAR">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnexcluir" layoutX="500.0" layoutY="443.0" mnemonicParsing="false" onAction="#excluir" prefHeight="35.0" prefWidth="80.0" text="EXCLUIR">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btneditar" layoutX="625.0" layoutY="443.0" mnemonicParsing="false" onAction="#editar" prefHeight="35.0" prefWidth="80.0" text="EDITAR">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

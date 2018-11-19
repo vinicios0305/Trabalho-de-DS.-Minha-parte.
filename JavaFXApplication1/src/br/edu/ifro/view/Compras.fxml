@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="736.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.ComprasController">
+   <children>
+      <ImageView fitHeight="758.0" fitWidth="857.0" layoutY="-6.0" opacity="0.21">
+         <image>
+            <Image url="@../../../../img/image_6483441%20(1).JPG" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNumero" layoutX="80.0" layoutY="57.0" prefHeight="25.0" prefWidth="87.0" />
+      <Label layoutX="20.0" layoutY="62.0" text="Numero:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="60.0" text="Emissão:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtEmissao" layoutX="262.0" layoutY="56.0" prefHeight="25.0" prefWidth="151.0" />
+      <Label layoutX="449.0" layoutY="60.0" text="Fornecedor:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFornecedor" layoutX="530.0" layoutY="57.0" prefHeight="25.0" prefWidth="294.0" />
+      <Label layoutX="20.0" layoutY="94.0" text="Representante:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRepresentante" layoutX="18.0" layoutY="115.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="262.0" layoutY="94.0" prefHeight="16.0" prefWidth="40.0" text="Email:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="262.0" layoutY="115.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="504.0" layoutY="94.0" text="Fone:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFoneRepresentante" layoutX="503.0" layoutY="115.0" prefHeight="25.0" prefWidth="132.0" />
+      <Label layoutX="680.0" layoutY="94.0" text="Nº Orçamento:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumeroOrcamento" layoutX="676.0" layoutY="115.0" prefHeight="25.0" prefWidth="132.0" />
+      <Label layoutX="20.0" layoutY="157.0" text="Comprador:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtComprador" layoutX="22.0" layoutY="178.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="262.0" layoutY="157.0" prefHeight="16.0" prefWidth="40.0" text="Email:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="262.0" layoutY="178.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="504.0" layoutY="157.0" text="Fone:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFoneComprador" layoutX="503.0" layoutY="178.0" prefHeight="25.0" prefWidth="132.0" />
+      <Label layoutX="677.0" layoutY="157.0" text="Situação:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSituacao" layoutX="676.0" layoutY="178.0" prefHeight="25.0" prefWidth="132.0" />
+      <Separator layoutY="148.0" prefHeight="8.0" prefWidth="857.0" />
+      <TableView blendMode="DIFFERENCE" layoutY="225.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="160.0" prefWidth="857.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn prefWidth="52.0" text="Item" />
+          <TableColumn prefWidth="116.0" text="Codigo" />
+          <TableColumn prefWidth="145.0" text=" Descrição Produto" />
+          <TableColumn prefWidth="54.0" text=" Qtd." />
+          <TableColumn prefWidth="45.0" text=" UN" />
+          <TableColumn prefWidth="91.0" text=" Vl. Unt." />
+          <TableColumn prefWidth="96.0" text=" Valor Total" />
+          <TableColumn text=" IPI Total" />
+          <TableColumn prefWidth="62.0" text=" %IPI" />
+          <TableColumn prefWidth="97.0" text=" %ICMS" />
+          
+          
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdicionarProduto" layoutX="179.0" layoutY="391.0" mnemonicParsing="false" onAction="#adicionarProduto" text="Adicionar Produto">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAlterarProduto" layoutX="344.0" layoutY="391.0" mnemonicParsing="false" onAction="#alterarProduto" text="Alterar Produto">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoverProduto" layoutX="490.0" layoutY="391.0" mnemonicParsing="false" onAction="#removerProduto" prefHeight="26.0" prefWidth="132.0" text="Remover Produto">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Separator layoutY="424.0" prefHeight="8.0" prefWidth="845.0" />
+      <Label layoutX="14.0" layoutY="439.0" text="Condição Pagto.:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCondicaoPagamento" layoutX="16.0" layoutY="461.0" prefHeight="25.0" prefWidth="119.0" />
+      <Label layoutX="180.0" layoutY="439.0" text="Previsao de Entrega:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtPrevisaoEntrega" layoutX="175.0" layoutY="461.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label layoutX="355.0" layoutY="439.0" text="Condição de Entrega:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCondicaoEmtrega" layoutX="353.0" layoutY="461.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label layoutX="530.0" layoutY="439.0" text="Total Ord. Compra:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTotalOrdCompra" layoutX="519.0" layoutY="461.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label layoutX="715.0" layoutY="439.0" text="Total IPI:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTotalIPI" layoutX="706.0" layoutY="461.0" prefHeight="25.0" prefWidth="95.0" />
+      <TextArea fx:id="txtObs" layoutX="16.0" layoutY="497.0" prefHeight="81.0" prefWidth="806.0" text="Observaçoes &#10;" />
+      <Separator layoutX="123.0" layoutY="592.0" prefHeight="8.0" prefWidth="728.0" />
+      <Label layoutX="18.0" layoutY="591.0" text="Endereço de Entrega">
+         <font>
+            <Font name="Arial Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="622.0" text="Cep:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCep" layoutX="57.0" layoutY="618.0" prefHeight="25.0" prefWidth="119.0" />
+      <Label layoutX="197.0" layoutY="622.0" text="Logadouro:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLogradouro" layoutX="278.0" layoutY="618.0" prefHeight="25.0" prefWidth="373.0" />
+      <Label layoutX="671.0" layoutY="623.0" text="Nº:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumero" layoutX="697.0" layoutY="618.0" prefHeight="25.0" prefWidth="101.0" />
+      <Label layoutX="21.0" layoutY="656.0" text="Compl.:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtComplemento" layoutX="76.0" layoutY="652.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="302.0" layoutY="657.0" text="Bairro:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBairro" layoutX="354.0" layoutY="652.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label layoutX="556.0" layoutY="656.0" text="Cidade:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCidade" layoutX="618.0" layoutY="653.0" prefHeight="25.0" prefWidth="183.0" />
+      <Button fx:id="btnCancelar" layoutX="177.0" layoutY="695.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="43.0" prefWidth="95.0" text="Cancelar">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="316.0" layoutY="695.0" mnemonicParsing="false" onAction="#editar" prefHeight="43.0" prefWidth="95.0" text="Editar">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnProcurar" layoutX="457.0" layoutY="695.0" mnemonicParsing="false" onAction="#procurar" prefHeight="43.0" prefWidth="95.0" text="Procurar">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSalvar" layoutX="602.0" layoutY="695.0" mnemonicParsing="false" onAction="#salvar" prefHeight="43.0" prefWidth="95.0" text="Salvar">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CadastroFornecedorController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="769.0" layoutX="-1.0" layoutY="-1.0" nodeOrientation="INHERIT" opacity="0.21">
+         <image>
+            <Image url="@../../../../img/image_6483441%20(1).JPG" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Accordion />
+      <TextField fx:id="txtRazaoSocial" layoutX="134.0" layoutY="31.0" prefHeight="25.0" prefWidth="201.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="34.0" layoutY="35.0" prefHeight="8.0" prefWidth="81.0" text="Razão Social:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="35.0" text="CNPJ:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCNPJ" layoutX="420.0" layoutY="31.0" prefHeight="26.0" prefWidth="161.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNomeFantasia" layoutX="134.0" layoutY="67.0" prefHeight="26.0" prefWidth="201.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="35.0" layoutY="72.0" text="Nome Fantasia:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="110.0" text="Descrição:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescricao" layoutX="134.0" layoutY="105.0" prefHeight="26.0" prefWidth="447.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtnumero" layoutX="642.0" layoutY="241.0" prefHeight="26.0" prefWidth="81.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="600.0" layoutY="247.0" text="N°:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtlogradouro" layoutX="134.0" layoutY="241.0" prefHeight="26.0" prefWidth="447.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="36.0" layoutY="246.0" text="Logradouro:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="322.0" text="Bairro/Distrito:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbairro" layoutX="134.0" layoutY="317.0" prefHeight="25.0" prefWidth="155.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtpais" layoutX="641.0" layoutY="280.0" prefHeight="26.0" prefWidth="81.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="473.0" layoutY="323.0" text="UF :">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCEP" layoutX="339.0" layoutY="317.0" prefHeight="25.0" prefWidth="117.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="304.0" layoutY="320.0" text="CEP:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="600.0" layoutY="285.0" text="País:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtresponsavel" layoutX="202.0" layoutY="366.0" prefHeight="26.0" prefWidth="427.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="37.0" layoutY="374.0" text="Responsável/Procurador:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="148.0" text="Telefone (01):">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txttelefone1" layoutX="134.0" layoutY="143.0" prefHeight="25.0" prefWidth="155.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txttelefone2" layoutX="420.0" layoutY="143.0" prefHeight="26.0" prefWidth="161.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="316.0" layoutY="148.0" text="Telefone (02):">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="72.0" text="NIRE:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNIRE" layoutX="420.0" layoutY="68.0" prefHeight="26.0" prefWidth="161.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCPFresponsavel" layoutX="73.0" layoutY="406.0" prefHeight="26.0" prefWidth="161.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTelefoneResponsavel" layoutX="500.0" layoutY="402.0" prefHeight="26.0" prefWidth="129.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="37.0" layoutY="412.0" text="CPF:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="405.0" prefHeight="19.0" prefWidth="56.0" text="Telefone:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btncancelar" layoutX="135.0" layoutY="464.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="47.0" prefWidth="129.0" text="Cancelar" />
+      <Button layoutX="419.0" layoutY="464.0" mnemonicParsing="false" onAction="#Cadastros" prefHeight="47.0" prefWidth="138.0" text="Cadastros" />
+      <Button fx:id="btnsalvar" layoutX="572.0" layoutY="463.0" mnemonicParsing="false" onAction="#salvar" prefHeight="47.0" prefWidth="138.0" text="Salvar" />
+      <Separator layoutX="204.0" layoutY="225.0" prefHeight="3.0" prefWidth="562.0" />
+      <Separator layoutX="4.0" layoutY="224.0" prefHeight="3.0" prefWidth="92.0" />
+      <Label layoutX="99.0" layoutY="219.0" text="Endereço da Empresa">
+         <font>
+            <Font name="Arial" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="159.0" fitWidth="113.0" layoutX="615.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dfvd" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="285.0" text="Complemento:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcomplemento" layoutX="134.0" layoutY="280.0" prefHeight="25.0" prefWidth="447.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <Separator layoutX="204.0" layoutY="355.0" prefHeight="3.0" prefWidth="562.0" />
+      <Label layoutX="99.0" layoutY="350.0" text="Dados do Empresário">
+         <font>
+            <Font name="Arial" size="10.0" />
+         </font>
+      </Label>
+      <Separator layoutX="2.0" layoutY="354.0" prefHeight="3.0" prefWidth="92.0" />
+      <Label layoutX="251.0" layoutY="410.0" text="RG:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <TextField fx:id="txtRGresponsavel" layoutX="286.0" layoutY="404.0" prefHeight="26.0" prefWidth="129.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <Separator layoutX="4.0" layoutY="443.0" prefHeight="3.0" prefWidth="762.0" />
+      <Label layoutX="35.0" layoutY="187.0" text="E-mail:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtemail" layoutX="134.0" layoutY="183.0" prefHeight="26.0" prefWidth="447.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnlimpar" layoutX="275.0" layoutY="463.0" mnemonicParsing="false" onAction="#limpar" prefHeight="47.0" prefWidth="129.0" text="Limpar" />
+      <TextField fx:id="txtUF" layoutX="498.0" layoutY="317.0" prefHeight="25.0" prefWidth="35.0" />
+   </children>
+</AnchorPane>
